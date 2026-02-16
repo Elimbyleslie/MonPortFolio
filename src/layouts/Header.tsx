@@ -79,8 +79,8 @@ const Header: React.FC<HeaderProps> = ({ activeSection, scrollToSection }) => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white border-t">
-          <div className="px-4 py-3 space-y-3">
+        <div className="md:hidden bg-white text-hoverClr font-medium  border-t">
+          <div className="px-4 py-3 space-y-5">
             {navItems.map((item) => (
               <button
                 key={item.id}

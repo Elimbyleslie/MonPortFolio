@@ -51,7 +51,7 @@ export const ProjectCard = ({ project, index }: ProjectCardProps) => {
       </div>
 
       {/* Contenu */}
-      <div className="p-6">
+      <div className="p-6 text-center">
         <h3 className="text-2xl font-bold text-gray-900 mb-3">
           {project.title}
         </h3>

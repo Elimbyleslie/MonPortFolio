@@ -58,19 +58,19 @@ const Contact: React.FC = () => {
 
   const contactInfo = [
     {
-      icon: <Mail className="w-8 h-8 text-green-500 flex-shrink-0" />,
+      icon: <Mail className="w-8 h-8 text-mainClr   flex-shrink-0" />,
       title: 'Email',
       value: 'elimbyleslie18@gmail.com',
       href: 'mailto:elimbyleslie18@gmail.com',
     },
     {
-      icon: <Phone className="w-8 h-8 text-green-500 flex-shrink-0" />,
+      icon: <Phone className="w-8 h-8 text-mainClr flex-shrink-0" />,
       title: 'Téléphone',
       value: '+237 694 180 923',
       href: 'tel:+237694180923',
     },
     {
-      icon: <MapPin className="w-8 h-8 text-green-500 flex-shrink-0" />,
+      icon: <MapPin className="w-8 h-8 text-mainClr flex-shrink-0" />,
       title: 'Localisation',
       value: 'Douala, Cameroun',
       href: null,
@@ -81,7 +81,7 @@ const Contact: React.FC = () => {
     <section id="contact" className="py-20 bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl font-bold text-center mb-4">Contactez-moi</h2>
-        <div className="w-20 h-1 bg-green-500 mx-auto mb-12"></div>
+        <div className="w-20 h-1 bg-mainClr mx-auto mb-12"></div>
 
         <div className="grid md:grid-cols-2 gap-12">
           {/* Contact Info */}
@@ -94,7 +94,7 @@ const Contact: React.FC = () => {
                   {info.href ? (
                     <a
                       href={info.href}
-                      className="text-gray-300 hover:text-green-500 transition-colors"
+                      className="text-gray-300 hover:text-mainClr transition-colors"
                     >
                       {info.value}
                     </a>
@@ -120,7 +120,7 @@ const Contact: React.FC = () => {
                 onChange={handleChange}
                 required
                 disabled={isSubmitting}
-                className="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:border-green-500 focus:outline-none transition-colors text-white disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:border-mainClr focus:outline-none transition-colors text-white disabled:opacity-50 disabled:cursor-not-allowed"
                 placeholder="Votre nom"
               />
             </div>
@@ -137,7 +137,7 @@ const Contact: React.FC = () => {
                 onChange={handleChange}
                 required
                 disabled={isSubmitting}
-                className="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:border-green-500 focus:outline-none transition-colors text-white disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:border-mainClr focus:outline-none transition-colors text-white disabled:opacity-50 disabled:cursor-not-allowed"
                 placeholder="votre@email.com"
               />
             </div>
@@ -154,7 +154,7 @@ const Contact: React.FC = () => {
                 required
                 disabled={isSubmitting}
                 rows={5}
-                className="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:border-green-500 focus:outline-none transition-colors resize-none text-white disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 focus:border-mainClr focus:outline-none transition-colors resize-none text-white disabled:opacity-50 disabled:cursor-not-allowed"
                 placeholder="Votre message..."
               ></textarea>
             </div>
@@ -162,7 +162,7 @@ const Contact: React.FC = () => {
             <button
               onClick={handleSubmit}
               disabled={isSubmitting}
-              className="w-full px-8 py-3 bg-green-600 text-white rounded-lg font-semibold hover:bg-green-700 transform hover:-translate-y-1 transition-all duration-300 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+              className="w-full px-8 py-3 bg-mainClr text-white rounded-lg font-semibold hover:bg-hoverClr transform hover:-translate-y-1 transition-all duration-300 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
             >
               {isSubmitting ? 'Envoi en cours...' : 'Envoyer le message'}
             </button>

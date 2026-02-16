@@ -16,22 +16,26 @@ const About: React.FC<AboutProps> = ({ scrollToSection }) => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Avatar */}
           <div className="flex justify-center">
-            <img src={MyPhoto} className=" max-w-96 rounded-full" />
+          <div className="border-8 rounded-full border-[#E6E7E5]">
+            <img src={MyPhoto} className="rounded-full max-sm:max-w-56 w-96 border-8 border-white " />
+            </div>
           </div>
 
           {/* Description */}
-          <div className="space-y-6">
-            <p className="text-lg text-gray-700 leading-relaxed">
+          <div className="space-y-6 text-center">
+            <p className="text-lg text-gray-700 leading-relaxed ">
               Bonjour ! Je suis <strong>Leslie Elimby</strong>, développeuse
               Full Stack Junior passionnée par la création d'applications web
               modernes , performantes et le Design d'interface Ui & Ux.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
-              Développeuse junior en plein apprentissage de{" "}
-              <strong>React</strong>, <strong>TypeScript</strong>,{" "}
-              <strong>Node.js</strong> et des technologies web, je compense mon
-              manque d'expérience par ma capacité d'apprentissage rapide et ma
-              passion pour créer des solutions digitales élégantes.
+           
+              Je perfectionne en continu mes
+              compétences en <strong>React</strong>, <strong>TypeScript</strong>, <strong>Node.js</strong>  et dans les technologies
+              web modernes. Je conçois des solutions digitales propres,
+              évolutives et centrées utilisateur. Curieuse,
+              adaptable et rigoureuse, j’évolue efficacement dans des
+              environnements collaboratifs et multiculturels.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">
               Mon approche mêle créativité, rigueur et apprentissage continu
