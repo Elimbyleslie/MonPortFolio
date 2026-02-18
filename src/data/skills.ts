@@ -9,7 +9,7 @@ export const skillsData: Skill[] = [
   {
     iconName: 'Code',
     title: 'Frontend',
-    items: ['React', 'TypeScript', 'Tailwind CSS', 'Redux', 'Framer Motion'],
+    items: ['React', 'TypeScript', 'Redux', 'Framer Motion', 'Vite','Html5', 'Css3', 'Javascript','Bootstrap', 'Tailwind CSS'],
   },
   {
     iconName: 'Server',
